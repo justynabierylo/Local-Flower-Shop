@@ -1,0 +1,152 @@
+/*price-boxes*/
+
+.main-prices{
+  background: #f1f1f1;
+  padding: 45px 0 70px;
+  letter-spacing: 1px;
+  background: radial-gradient(rgba(212, 129, 151, 0.11), rgba(196, 101, 100, 0.41));
+}
+
+.price-box{
+  height: 500px;
+  /*border: 2px solid #ccc;*/
+  background: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 75px;
+  box-shadow:  0 5px 20px 2px rgba(88, 88, 88, 0.6);
+}
+#price-bestseller-first{
+  background-image: url("../images/flowers/beautiful-bouquet-color-1179026.jpg");
+  background-size: cover;
+}
+
+#price-bestseller-sec{
+  background-image: url("../images/flowers/beautiful-beautiful-flowers-bloom-424670.jpg");
+  background-size: cover;
+}
+#price-bestseller-third{
+  background-image: url("../images/flowers/background-beautiful-blooming-1109561.jpg");
+  background-size: cover;
+}
+
+.price-box.standard{
+  background: var(--color);
+}
+
+.price-box:before{
+  content:"";
+  position: absolute;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  background: #fefefe;
+  width: 50px;
+  height: 50px;
+  top: -8%;
+}
+.price-box.standard:before{
+  border-color: transparent;
+  background: var(--color);
+}
+.price-box:after{
+  content:"";
+  position: absolute;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background: #ccc;
+  width: 25px;
+  height: 25px;
+  top: -8%;
+  transform: translate(0, calc(50% - 2px));
+}
+.price-box.standard:after{
+  background: #fff;
+  border-color: #fff;
+}
+.price-title{
+  text-transform: lowercase;
+  font-style: italic;
+  color: var(--color);
+  font-weight: 400;
+  font-size: 22px;
+}
+.price-title.standard{
+  color: #fff;
+}
+.price-number-container{
+  width: 100px;
+  height: 60px;
+  border: 1px solid #ccc;
+  /*border-radius: 50%;*/
+  position: relative;
+  color: #525252;
+  background-color: white;
+  opacity: 0.7;
+  left: 0;
+  top: -2%;
+}
+.price-number-container.standard{
+  background: #fff;
+  border-color: var(--color);
+  color:var(--color);
+}
+.price-number{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.price-number p:first-child{
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  margin: 5px;
+  padding: 0;
+  text-align: center;
+}
+.price-number p:last-child{
+  margin: 5px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price-list{
+  list-style: none;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  width: 100%;
+  font-size: 18px;
+  color: #7e7e7e;
+}
+
+.price-list li{
+  background: #aaa;
+  padding: 10px 50px;
+  text-align: center;
+  opacity: 0.8;
+}
+.price-list.standard li{
+  background: #fff;
+}
+
+.price-list li:nth-of-type(2n){
+  background: #ccc;
+}
+
+.price-link{
+  bottom: 20px;
+  position: absolute;
+}
+.price-link.standard{
+  background: #fff;
+  color:var(--color);
+}
+.price-link.standard:hover{
+  background: #ccc;
+}

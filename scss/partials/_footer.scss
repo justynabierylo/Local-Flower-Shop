@@ -1,0 +1,38 @@
+/*footer*/
+
+.footer-container{
+  padding: 20px auto;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+
+  a {
+    width: 15%;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    padding-left: 60px;
+
+    span{
+      color: var(--color);
+      display: inline-block;
+      margin: 0 2px;
+    }
+  }
+}
+
+.footer-box{
+  width: 15%;
+}
+
+.footer-rights{
+  width: 70%;
+
+  span{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    margin: auto 50px;
+  }
+}
